@@ -1,0 +1,15 @@
+package com.dongdongxia.my.patterns.abstractdocument.domain;
+
+import java.util.Optional;
+
+import com.dongdongxia.my.patterns.abstractdocument.Document;
+
+public interface HasModel extends Document{
+
+	String PROPERTY = "model";
+	
+	default Optional<String> getModel() {
+		return Optional.ofNullable((String) get(PROPERTY));
+	}
+	
+}
