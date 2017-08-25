@@ -2,3 +2,7 @@
 
 # 项目工程描述
 my-java-design-patterns 设计模式学习
+
+
+# 学习时候，查询的一些记录
+* JDK8的中文文档: http://blog.csdn.net/qw599186875/article/details/52265995
