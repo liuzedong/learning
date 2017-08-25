@@ -21,6 +21,8 @@
 		<module>my-java-design-patterns</module>
 		<!-- 学习JDK8代码 -->
 		<module>my-jdk8</module>
+		<!-- 学习google-guava代码 -->
+		<module>my-google-guava</module>
 	</modules>
 
 	<dependencyManagement>
