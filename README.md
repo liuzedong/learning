@@ -1,8 +1,8 @@
 # 存放，平时自己电脑上练习的工程项目
 
 # 项目工程描述
-my-java-design-patterns 设计模式学习
-my-jdk8 学习JavaSE8
+* my-java-design-patterns 设计模式学习
+* my-jdk8 学习JavaSE8
 
 
 # 学习时候，查询的一些记录
