@@ -19,6 +19,8 @@
 	<modules>
 		<!-- 学习java设计模式 -->
 		<module>my-java-design-patterns</module>
+		<!-- 学习JDK8代码 -->
+		<module>my-jdk8</module>
 	</modules>
 
 	<dependencyManagement>
