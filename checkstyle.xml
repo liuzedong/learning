@@ -6,7 +6,7 @@
 <module name="Checker">
 	<property name="charset" value="UTF-8" />
 	<property name="fileExtensions" value="java, xml, properties" />
-	<property name="severity" value="warning" />
+	<property name="severity" value="warning" /> <!-- warning, error -->
 
 	<module name="FileTabCharacter"><!-- 制表符 -->
 		<property name="eachLine" value="true" />

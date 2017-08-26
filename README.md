@@ -15,3 +15,4 @@ Jacoco 官网地址 | [http://www.eclemma.org/jacoco/trunk/doc](http://www.eclem
 checkstyle Eclipse插件 | help -> eclipse marketplace -> search(checkstyle)
 checkstyle 中文描述文档 | [http://www.cnblogs.com/tianshu/p/7050634.html](http://www.cnblogs.com/tianshu/p/7050634.html)
 checkstyle 华为开发配置 | [http://blog.csdn.net/zzq900503/article/details/49617939](http://blog.csdn.net/zzq900503/article/details/49617939)
+checkstyle 添加maven生命周期报错 | 使用命令执行 mvn checkstyle:checkstyle
