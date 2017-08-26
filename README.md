@@ -12,3 +12,6 @@
 JDK8的中文文档 | [http://blog.csdn.net/qw599186875/article/details/52265995](http://blog.csdn.net/qw599186875/article/details/52265995)
 Jacoco 代码覆盖率 | [http://www.jianshu.com/p/4c728b39185e](http://www.jianshu.com/p/4c728b39185e)
 Jacoco 官网地址 | [http://www.eclemma.org/jacoco/trunk/doc](http://www.eclemma.org/jacoco/trunk/doc)
+checkstyle Eclipse插件 | help -> eclipse marketplace -> search(checkstyle)
+checkstyle 中文描述文档 | [http://www.cnblogs.com/tianshu/p/7050634.html](http://www.cnblogs.com/tianshu/p/7050634.html)
+checkstyle 华为开发配置 | [http://blog.csdn.net/zzq900503/article/details/49617939](http://blog.csdn.net/zzq900503/article/details/49617939)
