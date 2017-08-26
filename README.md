@@ -17,3 +17,4 @@ checkstyle 中文描述文档 | [http://www.cnblogs.com/tianshu/p/7050634.html](
 checkstyle 华为开发配置 | [http://blog.csdn.net/zzq900503/article/details/49617939](http://blog.csdn.net/zzq900503/article/details/49617939)
 checkstyle 添加maven生命周期报错 | 使用命令执行 mvn checkstyle:checkstyle
 PMD 代码错误检测Eclipse插件 | https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/
+PMD 插件官网 | https://maven.apache.org/plugins/maven-pmd-plugin/

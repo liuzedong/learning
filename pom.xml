@@ -155,6 +155,45 @@
 				</executions> -->
 			</plugin>
 			<!-- 代码规范检测插件 end -->
+			
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.18.1</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <argLine>-Xmx1024M ${argLine}</argLine>
+                </configuration>
+            </plugin>
+			
+			<!-- 代码质量检测插件 begin -->
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.6</version>
+                <configuration>
+                    <failOnViolation>true</failOnViolation>
+                    <failurePriority>5</failurePriority>
+                    <printFailingErrors>true</printFailingErrors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 代码质量检测插件 begin -->
 		</plugins>
 	</build>
 
