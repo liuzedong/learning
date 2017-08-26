@@ -7,6 +7,24 @@
 	<packaging>pom</packaging>
 	<inceptionYear>2017</inceptionYear>
 
+	<!-- 定义开源协议 begin -->
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+	<!-- 定义开源协议 end -->
+
+	<!-- 企业信息 begin -->
+	<organization>
+		<name>栋栋侠</name>
+		<url>http://www.liuzedong.com</url>
+	</organization>
+	<!-- 企业信息 end -->
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.12</junit.version>
@@ -15,6 +33,7 @@
 		<slf4j.version>1.7.21</slf4j.version>
 		<logback.version>1.1.7</logback.version>
 	</properties>
+
 
 	<modules>
 		<!-- 学习java设计模式 -->
@@ -33,6 +52,24 @@
 				<version>${junit.version}</version>
 				<scope>test</scope>
 			</dependency>
+
+			<!-- logback jar begin -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<!-- logback jar end -->
 		</dependencies>
 	</dependencyManagement>
 
@@ -41,17 +78,14 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
-			<version>${logback.version}</version>
 		</dependency>
 		<!-- logback jar end -->
 	</dependencies>
@@ -66,6 +100,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
 				</configuration>
 			</plugin>
 			<!-- 指定编译器JDK插件 end -->
@@ -94,4 +129,45 @@
 			<!-- 代码覆盖率插件 end -->
 		</plugins>
 	</build>
+
+
+	<!-- 定义问题地址 begin -->
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/liuzedong/learning/issues</url>
+	</issueManagement>
+	<!-- 定义问题地址 end -->
+
+	<!-- 邮件列表 begin -->
+	<mailingLists>
+		<mailingList>
+			<name>Learning User MailingList</name>
+			<subscribe>java_liudong@163.com</subscribe>
+			<unsubscribe>java_liudong@163.com</unsubscribe>
+			<post>java_liudong@163.com</post>
+			<archive>https://github.com/liuzedong/learning</archive>
+		</mailingList>
+	</mailingLists>
+	<!-- 邮件列表 end -->
+
+	<!-- 版本库信息 begin -->
+	<scm>
+		<url>https://github.com/liuzedong/learning</url>
+		<connection>https://github.com/liuzedong/learning.git</connection>
+	</scm>
+	<!-- 版本库信息 end -->
+
+	<!-- 开发者信息 begin -->
+	<developers>
+		<developer>
+			<id>liudong</id>
+			<name>刘东</name>
+			<email>java_liudong@163.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+	<!-- 开发者信息 end -->
 </project>

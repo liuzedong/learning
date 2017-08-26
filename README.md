@@ -7,5 +7,8 @@
 
 
 # 学习时候，查询的一些记录
-* JDK8的中文文档: http://blog.csdn.net/qw599186875/article/details/52265995
-* Jacoco 代码覆盖率： http://www.jianshu.com/p/4c728b39185e
+关键字 | 地址
+----|----
+JDK8的中文文档 | [http://blog.csdn.net/qw599186875/article/details/52265995](http://blog.csdn.net/qw599186875/article/details/52265995)
+Jacoco 代码覆盖率 | [http://www.jianshu.com/p/4c728b39185e](http://www.jianshu.com/p/4c728b39185e)
+Jacoco 官网地址 | [http://www.eclemma.org/jacoco/trunk/doc](http://www.eclemma.org/jacoco/trunk/doc)
