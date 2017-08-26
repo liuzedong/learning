@@ -9,10 +9,10 @@ import com.dongdongxia.my.patterns.abstractdocument.AbstractDocument;
  * @ClassName: Part
  * @author java_liudong@163.com  2017年8月25日 上午9:59:41
  */
-public class Part extends AbstractDocument implements HasType, HasModel, HasPrice{
+public class Part extends AbstractDocument implements HasType, HasModel, HasPrice {
 
-	public Part(Map<String, Object> properties) {
-		super(properties);
-	}
+    public Part(Map<String, Object> properties) {
+        super(properties);
+    }
 
 }

@@ -38,6 +38,7 @@ public interface Document {
      * <p>Description: 获取所有的孩子节点， 用Stream进行返回</p>
      * @param key 键
      * @param constructor 子类的构造器
+     * @param <T> 汽车
      * @return 子类的Stream
      * @author java_liudong@163.com  2017年8月24日 上午10:41:19
      */

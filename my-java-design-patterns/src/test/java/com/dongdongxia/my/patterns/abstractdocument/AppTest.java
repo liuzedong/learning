@@ -10,10 +10,15 @@ import org.junit.Test;
  */
 public class AppTest {
 
-	
-	@Test
-	public void shouldExecuteAppWithoutException() {
-		App.main(null);
-	}
-	
+    /**
+     * 
+     * <p>Title: shouldExecuteApp</p>
+     * <p>Description: TODO</p>
+     * @author java_liudong@163.com  2017年8月26日 下午5:44:55
+     */
+    @Test
+    public void shouldExecuteApp() {
+        App.main(null);
+    }
+    
 }

@@ -6,7 +6,7 @@
 <module name="Checker">
 	<property name="charset" value="UTF-8" />
 	<property name="fileExtensions" value="java, xml, properties" />
-	<property name="severity" value="warning" /> <!-- warning, error -->
+	<property name="severity" value="error" /> <!-- warning, error -->
 
 	<module name="FileTabCharacter"><!-- 制表符 -->
 		<property name="eachLine" value="true" />
@@ -48,10 +48,10 @@
 		<module name="LocalFinalVariableName"/> <!-- 检查局部常量的命名是否符合格式 -->
 		<module name="LocalVariableName"/> <!-- 检查局部变量的命名是否符合格式 -->
 		<module name="MemberName"> <!-- 检查类里变量名是否符合格式 -->
-			<property name="format" value="(^[a-z][a-z0-9][a-zA-Z0-9]{0,19}$)"/>
+			<property name="format" value="(^[a-z][a-z0-9][a-zA-Z0-9]{0,29}$)"/>
 		</module>
 		<module name="MethodName"> <!-- 检查方法命名是否符合格式 -->
-	      <property name="format" value="(^[a-z][a-zA-Z0-9]{0,19}$)"/>
+	      <property name="format" value="(^[a-z][a-zA-Z0-9]{0,29}$)"/>
 	    </module>
 	    <module name="PackageName"> <!-- 检查包名是否符合格式 -->
 	    	<property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
@@ -63,7 +63,7 @@
 	    	<property name="format" value="(^[A-Z0-9_]{0,19}$)"/>
 	    </module>
 	    <module name="TypeName"> <!-- 检查类名接口名是否符合格式 -->
-	    	<property name="format" value="(^[A-Z][a-zA-Z0-9]{0,19}$)"/>
+	    	<property name="format" value="(^[A-Z][a-zA-Z0-9]{0,29}$)"/>
 	    </module>
 	    <module name="NoFinalizer"/> <!-- 检查是否有定义finalize() -->
 	    <module name="Indentation"> <!-- 检查Java代码的缩进 basicOffset:相对代码体， braceAdjustment:括号的缩进 -->
