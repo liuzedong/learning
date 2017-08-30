@@ -17,3 +17,4 @@ my-java-design-patterns 设计模式学习
 Abstract Document | 抽象文档 | 结构型 | 接口定义默认实现，继承接口即可，实现插件
 Abstract Factory | 抽象工厂 | 创建型 | 工厂的工厂，一个大工厂管理其他工厂，隐藏初始化对象
 Adapter | 适配器 | 结构型 | 对现有的接口或实体进行扩展，进行兼容
+Balking | 阻塞 | 并发 | 用于防止一个对象执行某些代码如果它是一个不完整的或不合适的状态，使用的是synchronized进行锁住线程
