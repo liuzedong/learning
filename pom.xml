@@ -33,6 +33,7 @@
 		<compiler.version>3.0</compiler.version>
 		<slf4j.version>1.7.21</slf4j.version>
 		<logback.version>1.1.7</logback.version>
+		<guava.version>23.0</guava.version>
 	</properties>
 
 
@@ -54,11 +55,11 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>${mockito.version}</version>
-                <scope>test</scope>
-            </dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito.version}</version>
+				<scope>test</scope>
+			</dependency>
 
 			<!-- logback jar begin -->
 			<dependency>
@@ -77,6 +78,14 @@
 				<version>${logback.version}</version>
 			</dependency>
 			<!-- logback jar end -->
+
+            <!-- goole guava begin -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+			<!-- goole guava end -->
 		</dependencies>
 	</dependencyManagement>
 
@@ -148,59 +157,50 @@
 					<failsOnError>true</failsOnError>
 					<includeTestSourceDirectory>true</includeTestSourceDirectory>
 				</configuration>
-				<!-- <executions>
+				<!-- <executions> <execution> <id>checkstyle</id> <phase>validate</phase> 
+					<goals> <goal>check</goal> </goals> <configuration> <failOnViolation>true</failOnViolation> 
+					</configuration> </execution> </executions> -->
+			</plugin>
+			<!-- 代码规范检测插件 end -->
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-junit47</artifactId>
+						<version>2.18.1</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<argLine>-Xmx1024M ${argLine}</argLine>
+				</configuration>
+			</plugin>
+
+			<!-- 代码质量检测插件 begin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.6</version>
+				<configuration>
+					<failOnViolation>true</failOnViolation>
+					<failurePriority>5</failurePriority>
+					<printFailingErrors>true</printFailingErrors>
+				</configuration>
+				<executions>
 					<execution>
-						<id>checkstyle</id>
-						<phase>validate</phase>
 						<goals>
 							<goal>check</goal>
 						</goals>
 						<configuration>
-							<failOnViolation>true</failOnViolation>
+							<excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
 						</configuration>
 					</execution>
-				</executions> -->
+				</executions>
 			</plugin>
-			<!-- 代码规范检测插件 end -->
-			
-			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.surefire</groupId>
-                        <artifactId>surefire-junit47</artifactId>
-                        <version>2.18.1</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <argLine>-Xmx1024M ${argLine}</argLine>
-                </configuration>
-            </plugin>
-			
 			<!-- 代码质量检测插件 begin -->
-			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.6</version>
-                <configuration>
-                    <failOnViolation>true</failOnViolation>
-                    <failurePriority>5</failurePriority>
-                    <printFailingErrors>true</printFailingErrors>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <configuration>
-                            <excludeFromFailureFile>exclude-pmd.properties</excludeFromFailureFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- 代码质量检测插件 begin -->
 		</plugins>
 	</build>
 
