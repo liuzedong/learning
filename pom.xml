@@ -44,6 +44,8 @@
 		<module>my-jdk8</module>
 		<!-- 学习google-guava代码 -->
 		<module>my-google-guava</module>
+		<!-- 学习微服务第一个案例 -->
+		<module>my-micro-service-demo01</module>
 	</modules>
 
 	<dependencyManagement>
