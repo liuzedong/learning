@@ -4,6 +4,7 @@
 * my-java-design-patterns 设计模式学习
 * my-jdk8 学习JavaSE8
 * my-google-guava 学习google-guava核心类
+* my-micro-service-service-demo01 学习微服务代码
 
 
 # 学习时候，查询的一些记录
