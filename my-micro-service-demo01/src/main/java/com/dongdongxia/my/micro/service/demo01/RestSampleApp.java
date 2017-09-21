@@ -2,6 +2,7 @@ package com.dongdongxia.my.micro.service.demo01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @ClassName: RestSampleApp
  * @author java_liudong@163.com  2017年9月20日 上午11:40:27
  */
+@EnableEurekaServer
 @SpringBootApplication
 public class RestSampleApp {
 

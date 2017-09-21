@@ -4,6 +4,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.dongdongxia.my.micro.service.demo01.entity.Entity;
 import com.dongdongxia.my.micro.service.demo01.entity.Restaurant;
 import com.dongdongxia.my.micro.service.demo01.repository.RestaurantRepository;
@@ -13,6 +15,7 @@ import com.dongdongxia.my.micro.service.demo01.repository.RestaurantRepository;
  * @ClassName: InMemRestaurantRepository
  * @author java_liudong@163.com  2017年9月20日 下午4:06:36
  */
+@Repository
 public class InMemRestaurantRepository implements RestaurantRepository {
 
     // 暂时使用一个默认的Map进行装入实体，实际情况为数据库
