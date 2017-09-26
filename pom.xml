@@ -46,6 +46,8 @@
 		<module>my-google-guava</module>
 		<!-- 学习微服务第一个案例 -->
 		<module>my-micro-service-demo01</module>
+		<!-- 工作时候，记录的测试代码 -->
+		<module>my-use-example</module>
 	</modules>
 
 	<dependencyManagement>
