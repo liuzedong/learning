@@ -56,12 +56,13 @@ public class RestaurantController {
         Collection<Restaurant> restaurants;
         try {
             restaurants = restaurantService.findByName(name);
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             LOGGER.warn("查找餐厅失败", e);
             return new ResponseEntity<Collection<Restaurant>>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        return restaurants.size() > 0 ? new ResponseEntity<Collection<Restaurant>>(restaurants, HttpStatus.OK) :
-            new ResponseEntity<Collection<Restaurant>>(HttpStatus.NO_CONTENT);
+        return restaurants.size() > 0 ? new ResponseEntity<Collection<Restaurant>>(restaurants, HttpStatus.OK) 
+                : new ResponseEntity<Collection<Restaurant>>(HttpStatus.NO_CONTENT);
     }
     
     /**
@@ -81,7 +82,8 @@ public class RestaurantController {
         Entity<Restaurant> restaurant;
         try {
             restaurant = restaurantService.findById(id);
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             LOGGER.warn("查找餐厅失败", e);
             return new ResponseEntity<Entity<Restaurant>>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -103,7 +105,8 @@ public class RestaurantController {
                 restaurant.getName()));
         try {
             restaurantService.add(restaurant);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             LOGGER.warn("餐厅添加失败 : ", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

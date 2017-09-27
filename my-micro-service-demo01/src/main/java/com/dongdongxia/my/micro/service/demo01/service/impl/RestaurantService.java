@@ -46,7 +46,7 @@ public class RestaurantService extends BaseService<Restaurant, String> {
      * @throws Exception 异常
      * @author java_liudong@163.com  2017年9月20日 下午5:54:52
      */
-    public Collection<Restaurant> findByName(String name) throws Exception{
+    public Collection<Restaurant> findByName(String name) throws Exception {
         if (name == null || "".equals(name)) {
             throw new Exception("餐厅的名称不能为空");
         }

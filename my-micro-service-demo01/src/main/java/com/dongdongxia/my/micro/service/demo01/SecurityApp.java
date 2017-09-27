@@ -46,10 +46,10 @@ public class SecurityApp {
         @Override
         public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
             clients.inMemory()
-            .withClient("acme")
-            .secret("acmesecret")
-            .authorizedGrantTypes("authorization_code", "refresh_token", "implicit", "password", "client_credentials")
-            .scopes("webshop");
+                .withClient("acme")
+                .secret("acmesecret")
+                .authorizedGrantTypes("authorization_code", "refresh_token", "implicit", "password", "client_credentials")
+                .scopes("webshop");
         }
     }
 }
