@@ -22,8 +22,10 @@ public class UseLambda {
         LOGGER.info("USE Lambda create {} impl", LambdaInterface.class);
         
         LambdaInterface lambadInterface = () -> {};
-        lambadInterface.function("123", "445");;
+        lambadInterface.function("123", "445");
         
     }
+    
+    
     
 }
