@@ -1,5 +1,6 @@
 package com.dongdongxia.my.jdk8.nio.file;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -142,6 +143,32 @@ public class UseFiles {
             System.out.format("写入到： %s%n", write);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        
+        // 使用流的形式去读取文件， 缓冲区
+        try {
+            BufferedReader br = Files.newBufferedReader(Paths.get("/home/liuzedong/下载/svnImport.txt"));
+            while (br.ready()) {
+                System.out.println(br.readLine());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        // 创建普通文件， 如果文件存在，会 抛出异常
+        try {
+            Path createFile = Files.createFile(FILE_PATH);
+            System.out.format("创建文件的路径: %s%n", createFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        // 创建一个临时文件
+        try {
+            Path createTempFile = Files.createTempFile(null, ".myapp");
+            System.out.format("创建临时文件的路径: %s%n", createTempFile);
+        } catch (IOException e) {
+            System.err.format("IOException: %s%n", e);
         }
     }
     
