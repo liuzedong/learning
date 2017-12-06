@@ -1,6 +1,8 @@
 package com.dongdongxia.my.jdk8.time;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +24,9 @@ public class TimePackageDemo {
         
         LOGGER.info(String.format("current date is year : %d ", year));
         LOGGER.info(String.format("current date of month : %d", dayOfMonth));
+        
+        LocalDateTime now2 = LocalDateTime.now();
+        System.out.println(now2.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         
     }
     
