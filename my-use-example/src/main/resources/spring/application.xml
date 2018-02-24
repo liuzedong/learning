@@ -1,0 +1,11 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:liudong="http://code.liuzedong.com/schema/liudong"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.liuzedong.com/schema/liudong 
+    http://code.alibabatech.com/schema/liudong/liudong.xsd">
+
+    <liudong:dongdongxia />
+    
+</beans>
